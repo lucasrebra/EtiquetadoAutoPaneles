@@ -1,5 +1,5 @@
 # Detección de Paneles Solares con Detectron2
-![Ejemplo de Detectron2](https://github.com/lucasrebra/EtiquetadoAutoPaneles/edit/main/images/detectron2.png?raw=true)
+![Ejemplo de Detectron2](https://github.com/lucasrebra/EtiquetadoAutoPaneles/edit/main/images/Detectron2.png?raw=true)
 Este proyecto utiliza Detectron2, un framework de detección de objetos desarrollado por Facebook AI Research, para identificar paneles solares en imágenes aéreas capturadas por drones. A continuación, se describen los pasos necesarios para configurar el entorno de desarrollo y preparar los datos para el entrenamiento y la inferencia.
 
 ## Configuración del Entorno
