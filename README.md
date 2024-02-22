@@ -104,6 +104,7 @@ La precisión de la detección se evalúa utilizando métricas estándar, como e
 
 A lo largo de la evaluación del modelo, se han obtenido resultados notables que demuestran la eficacia de Detectron2 para la tarea de detección de paneles solares. Algunas imágenes de ejemplo muestran paneles solares detectados con alta precisión, resaltando el potencial de esta tecnología para automatizar el monitoreo de instalaciones solares a gran escala.
 
+![Ejemplo de Detectron2](/images/Paneles1.png)
 ## Conclusión y Usos Futuros
 
 La implementación de Detectron2 para la detección de paneles solares en imágenes aéreas ha demostrado ser una herramienta poderosa, ofreciendo una base sólida para futuras aplicaciones en el mantenimiento y monitoreo de granjas fotovoltaicas.
