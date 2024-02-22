@@ -64,3 +64,27 @@ Para entrenar un modelo de Detectron2 para la detección de paneles solares, nec
    Con las imágenes y etiquetas preparadas, carga tus datos al entorno de Detectron2 para comenzar el proceso de entrenamiento.
 
 Este esquema básico te ayudará a iniciar tu proyecto de detección de paneles solares con Detectron2. Recuerda ajustar los pasos de instalación y configuración según las especificaciones de tu entorno de desarrollo y las características de tu conjunto de datos.
+
+## Entrenamiento y Personalización de la Red Neuronal
+
+El proceso de entrenamiento y personalización de la red neuronal con Detectron2 implicó varios pasos clave, incluida la generación de etiquetas con Labelbox, la introducción de una etiqueta específica para paneles cortados y la selección de configuraciones basadas en experimentos exitosos.
+
+### Uso de Labelbox para Generar Etiquetas
+
+Labelbox se utilizó como herramienta principal para etiquetar las imágenes del conjunto de datos. Cada imagen fue cuidadosamente revisada y etiquetada para identificar la ubicación de los paneles solares. Este proceso fue fundamental para garantizar que el modelo pudiera aprender con precisión de los datos reales.
+
+#### Etiqueta de Paneles Cortados
+
+Se introdujo una etiqueta específica para "paneles cortados" en el conjunto de datos. Esta etiqueta fue crucial para enseñar al modelo a comprender mejor la escena y diferenciar entre paneles solares completos y aquellos parcialmente visibles o cortados por el borde de la imagen. Esto ayudó a mejorar significativamente la precisión del modelo, permitiéndole enfocarse solo en los paneles completamente visibles para la detección.
+
+### Experimentos y Mejoras
+
+Durante el proceso de entrenamiento, se llevaron a cabo varios experimentos para identificar las configuraciones y técnicas que ofrecían los mejores resultados. Algunas de las decisiones clave tomadas como resultado de estos experimentos incluyeron:
+
+- **Ajuste de Hiperparámetros**: Se encontró que ciertos ajustes en los hiperparámetros, como la tasa de aprendizaje y el tamaño del lote, tenían un impacto significativo en la eficacia del modelo.
+- **Aumento de Datos**: La implementación de técnicas de aumento de datos, como el volteo horizontal y el ajuste de brillo, resultó en una mejora de la robustez del modelo frente a variaciones en las imágenes de entrada.
+- **Selección de Arquitectura**: Se experimentó con diferentes arquitecturas de Detectron2, y se seleccionó la que ofrecía el mejor equilibrio entre precisión y velocidad de procesamiento para nuestras necesidades específicas.
+
+Estas decisiones, basadas en los resultados de los experimentos, fueron fundamentales para afinar el modelo y lograr un rendimiento óptimo en la tarea de detección de paneles solares.
+
+Con estos pasos, se logró desarrollar un modelo altamente eficaz y personalizado para la detección de paneles solares en imágenes aéreas, capaz de comprender de manera intuitiva la escena y focalizarse en los elementos de interés.
