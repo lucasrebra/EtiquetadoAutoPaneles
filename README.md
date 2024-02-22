@@ -1,4 +1,3 @@
-
 # Detección de Paneles Solares con Detectron2
 
 Este proyecto utiliza Detectron2, un framework de detección de objetos desarrollado por Facebook AI Research, para identificar paneles solares en imágenes aéreas capturadas por drones. A continuación, se describen los pasos necesarios para configurar el entorno de desarrollo y preparar los datos para el entrenamiento y la inferencia.
@@ -88,3 +87,32 @@ Durante el proceso de entrenamiento, se llevaron a cabo varios experimentos para
 Estas decisiones, basadas en los resultados de los experimentos, fueron fundamentales para afinar el modelo y lograr un rendimiento óptimo en la tarea de detección de paneles solares.
 
 Con estos pasos, se logró desarrollar un modelo altamente eficaz y personalizado para la detección de paneles solares en imágenes aéreas, capaz de comprender de manera intuitiva la escena y focalizarse en los elementos de interés.
+
+## Detección y Análisis
+
+Una vez el modelo de Detectron2 ha sido entrenado y personalizado, el siguiente paso es utilizarlo para la detección de objetos en nuevas imágenes. Este proceso implica cargar el modelo, procesar las imágenes de entrada y analizar los resultados obtenidos.
+
+### Proceso de Detección
+
+- **Carga del Modelo**: El modelo entrenado se carga en el entorno de ejecución.
+- **Procesamiento de Imágenes**: Las imágenes capturadas por drones son procesadas por el modelo, identificando la presencia de paneles solares.
+- **Interpretación de Resultados**: Los resultados incluyen la ubicación de cada panel detectado, junto con una puntuación de confianza para cada detección.
+
+La precisión de la detección se evalúa utilizando métricas estándar, como el IoU (Intersección sobre la Unión), para asegurar que el modelo es capaz de identificar correctamente los paneles solares en diversas condiciones de iluminación y ángulos de visión.
+
+## Resultados Destacables
+
+A lo largo de la evaluación del modelo, se han obtenido resultados notables que demuestran la eficacia de Detectron2 para la tarea de detección de paneles solares. Algunas imágenes de ejemplo muestran paneles solares detectados con alta precisión, resaltando el potencial de esta tecnología para automatizar el monitoreo de instalaciones solares a gran escala.
+
+## Conclusión y Usos Futuros
+
+La implementación de Detectron2 para la detección de paneles solares en imágenes aéreas ha demostrado ser una herramienta poderosa, ofreciendo una base sólida para futuras aplicaciones en el mantenimiento y monitoreo de granjas fotovoltaicas.
+
+### Aplicaciones Futuras
+
+- **Detección de Fallos en Paneles Solares**: Utilizando técnicas adicionales, como el algoritmo de líneas de Hough, el sistema puede ser extendido para detectar automáticamente fallos en las celdas de los paneles solares.
+- **Localización Geográfica de Paneles**: La integración de técnicas de localización permitirá situar geográficamente cada panel detectado dentro de la granja fotovoltaica, facilitando el envío de técnicos para su reparación basado en la información precisa de su ubicación.
+- **Optimización de Rutas para Drones**: Conociendo la posición y el avance del drone, es posible optimizar las rutas de vuelo para maximizar la eficiencia del monitoreo y la detección.
+
+Este proyecto sienta las bases para explorar estas y otras aplicaciones, aprovechando la potencia de Detectron2 y las técnicas de visión por computadora para mejorar la gestión y el mantenimiento de infraestructuras solares.
+
